@@ -67,7 +67,7 @@ body{
   color: #fff;
   list-style: none;
   gap: 50px;
-  width: 60%;
+  
 }
 .navbar_ul li a{
   text-decoration: none;
@@ -87,4 +87,22 @@ body{
   height: 40px;
   font-size: 1rem;
   background: #008000;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+.login:hover{
+  cursor: pointer;
+}
+.get_started{
+  width:140px;
+  height: 40px;
+  font-size: 1rem;
+  background: #008000;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+.get_started:hover{
+  cursor: pointer;
 }
