@@ -77,12 +77,14 @@ body{
   cursor: pointer;
 }
 .btns{
-  
-}
-/*
-.btns{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
-button{
+.login{
   width:100px;
-}*/
+  height: 40px;
+  font-size: 1rem;
+  background: #008000;
+}
