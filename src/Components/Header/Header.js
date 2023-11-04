@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from '../Navbar'
+import Navbar from '../Navbar/Navbar'
+import './Header.css'
 
 const Header = () => {
   return (
     <div className='banner'>
         <Navbar/>
-       <div className='banner_content'>
+        <div className='banner_content'>
             <div className='container'>
                 <div className='banner_text'>
                     <h3>Efficient and Automated</h3>
@@ -20,7 +21,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-       </div> 
+        </div> 
       
     </div>
   )
