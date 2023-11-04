@@ -20,4 +20,4 @@ export const Navlinks = [
         url: 'learn',
     },
             
-]
+];

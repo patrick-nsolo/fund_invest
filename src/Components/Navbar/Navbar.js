@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import Dropdown from '../Dropdown/Dropdown'
+import { Navlinks } from '../Navlinks'
 
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className='logo'>
                 <img src='/Images/fund-invest.png' alt='logo'/>
             </div>  
-              
+             
             <div className='btns'>
                 <button className='login'>Login</button>
                 <button className='get_started'>Get Started</button>
