@@ -35,7 +35,10 @@ body{
   font-size: 3.2rem;
   line-height: 70px;
   font-weight: 900;
+  margin-top: 20px;
 }
 .banner_text p{
   font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 20px;
 }
