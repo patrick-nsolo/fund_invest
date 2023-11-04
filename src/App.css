@@ -76,6 +76,9 @@ body{
 .navbar_ul li a:hover{
   cursor: pointer;
 }
+.btns{
+  
+}
 /*
 .btns{
   display: flex;
