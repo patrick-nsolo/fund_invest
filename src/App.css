@@ -66,12 +66,12 @@ body{
   display: flex;
   color: #fff;
   list-style: none;
-  gap: 50px;
-  
+  gap: 50px; 
 }
 .navbar_ul li a{
   text-decoration: none;
   color: #fff;
+  font-weight: 600;
 }
 .navbar_ul li a:hover{
   cursor: pointer;

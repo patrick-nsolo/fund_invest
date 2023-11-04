@@ -15,6 +15,9 @@ const Header = () => {
                         We help you cultivate wealth with precision. Financial Success Begins
                         Here.
                     </p>
+                    <div className='banner_btn'>
+                        <a href='/' className='smart-btn'>Get Started</a>
+                    </div>
                 </div>
             </div>
        </div> 
