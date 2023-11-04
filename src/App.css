@@ -13,6 +13,7 @@ body{
   background: url('/public/Images/finance-image.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .banner_content{
   display:flex;
@@ -42,3 +43,35 @@ body{
   font-weight: 400;
   margin-top: 20px;
 }
+/*.navbar{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+.navbar_text{
+  display: flex;
+  align-itms: center;
+  height:60px;
+}
+.logo{
+  width:40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:60px;
+  margin-top: 20px;
+}
+.logo img{
+  width:300px;
+  height:80px;
+}
+.navbar_ul{
+  width:60%;
+}
+.btns{
+  display: flex;
+}
+button{
+  width:100px;
+}*/
