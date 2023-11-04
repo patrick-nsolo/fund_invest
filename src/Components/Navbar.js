@@ -3,25 +3,25 @@ import React from 'react'
 const Navbar = () => {
   return (
     <nav className='navbar'>
-        <div className='navbar_text'>
+        <div className='navbar_content'>
             <div className='logo'>
                 <img src='/Images/fund-invest.png' alt='logo'/>
             </div>  
             <ul className='navbar_ul'>
                     <li>
-                        <a href=''>Cash</a>
+                        <a href='/'>Cash</a>
                     </li>
                     <li>
-                        <a href=''>Bonds</a>
+                        <a href='/'>Bonds</a>
                     </li>
                     <li>
-                        <a href=''>Stocks</a>
+                        <a href='/'>Stocks</a>
                     </li>
                     <li>
-                        <a href=''>Automated Investing</a>
+                        <a href='/'>Automated Investing</a>
                     </li>
                     <li>
-                        <a href=''>Learn</a>
+                        <a href='/'>Learn</a>
                     </li>
                 </ul>  
             <div className='btns'>
