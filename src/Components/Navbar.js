@@ -6,10 +6,12 @@ const Navbar = () => {
 
     const toggleAutomatedInvesting = () => {
         setShowAutomatedInvesting(!showAutomatedInvesting);
+        setShowLearn(false);
     };
 
     const toggleLearn = () => {
         setShowLearn(!showLearn);
+        setShowAutomatedInvesting(false);
     };
   return (
     <nav className='navbar'>
@@ -28,7 +30,7 @@ const Navbar = () => {
                         <a href='/'>Stocks</a>
                     </li>
                     <li>
-                        <a href='/' 
+                        <a href='/automated-investing' 
                         onClick={toggleAutomatedInvesting}
                         className={showAutomatedInvesting ? 'active' : ''}
                         >
@@ -47,7 +49,7 @@ const Navbar = () => {
                         )}
                     </li>
                     <li>
-                        <a href='/'
+                        <a href='/learn'
                         onClick={toggleLearn}
                         className={showLearn ? 'active' : ''}
                         >
