@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
+    const [showAutomatedInvesting, setShowAutomatedInvesting] = useState(false);
+    const [showLearn, setShowLearn] = useState(false);
+
+    const toggleAutomatedInvesting = () => {
+        setShowAutomatedInvesting(!showAutomatedInvesting);
+    };
+
+    const toggleLearn = () => {
+        setShowLearn(!showLearn);
+    };
   return (
     <nav className='navbar'>
         <div className='navbar_content'>
@@ -18,10 +28,42 @@ const Navbar = () => {
                         <a href='/'>Stocks</a>
                     </li>
                     <li>
-                        <a href='/'>Automated Investing</a>
+                        <a href='/' 
+                        onClick={toggleAutomatedInvesting}
+                        className={showAutomatedInvesting ? 'active' : ''}
+                        >
+                        Automated Investing 
+                        {showAutomatedInvesting ? ' ▲' : ' ▼'}
+                        </a>
+                        {showAutomatedInvesting && (
+                        <ul className='dropdown-content'>
+                            <li>
+                            <a href='/automated-investing/option1' onClick={toggleAutomatedInvesting}>Option 1</a>
+                            </li>
+                            <li>
+                            <a href='/automated-investing/option2' onClick={toggleAutomatedInvesting}>Option 2</a>
+                            </li>
+                        </ul>
+                        )}
                     </li>
                     <li>
-                        <a href='/'>Learn</a>
+                        <a href='/'
+                        onClick={toggleLearn}
+                        className={showLearn ? 'active' : ''}
+                        >
+                        Learn
+                        {showLearn ? ' ▲' : ' ▼'}
+                        </a>
+                        {showLearn && (
+                        <ul className='dropdown-content'>
+                            <li>
+                            <a href='/learn/option1'>Option 1</a>
+                            </li>
+                            <li>
+                            <a href='/learn/option2'>Option 2</a>
+                            </li>
+                        </ul>
+                        )}
                     </li>
                 </ul>  
             <div className='btns'>

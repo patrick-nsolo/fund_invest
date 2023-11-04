@@ -75,6 +75,7 @@ body{
 }
 .navbar_ul li a:hover{
   cursor: pointer;
+  color: #008000;
 }
 .btns{
   display: flex;
@@ -105,4 +106,16 @@ body{
 }
 .get_started:hover{
   cursor: pointer;
+}
+.banner_btn{
+  margin-top: 40px;
+}
+.smart-btn{
+  text-decoration: none;
+  background: #008000;
+  padding: 20px 40px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30px;
+
 }
