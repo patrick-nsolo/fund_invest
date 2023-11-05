@@ -21,7 +21,7 @@ const Phonesection = () => {
               </p>
           </div>
           <div className='col-6 phony'>
-            <Phone/>
+            
           </div>
         </div>
       </div>  
