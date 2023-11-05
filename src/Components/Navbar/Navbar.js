@@ -58,15 +58,15 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <div className={`nav_link ${isDropdownOpen ? 'caret-rotate' : ''}`} onClick={handleLearnClick}>
-                    <span className={`selected ${isDropdownOpen ? 'caret-rotate' : ''}`}>Learn</span>
-                    <div className={`caret ${isDropdownOpen ? 'caret-rotate' : ''}`}></div>
-                  </div>
-                  <ul className={`dropdown ${isDropdownOpen ? 'dropdown-open' : ''}`}>
-                      <li>Social Responsibility (SRI)</li>
-                      <li>Retirement (IRAs)</li>
-                      <li>Explore all Investments</li>
-                  </ul>
+                <div className={`nav_link ${isLearnOpen ? 'caret-rotate' : ''}`} onClick={handleLearnClick}>
+                  <span className={`selected ${isLearnOpen ? 'caret-rotate' : ''}`}>Learn</span>
+                  <div className={`caret ${isLearnOpen ? 'caret-rotate' : ''}`}></div>
+                </div>
+                <ul className={`dropdown ${isLearnOpen ? 'dropdown-open' : ''}`}>
+                  <li>Education</li>
+                  <li>Guides</li>
+                  <li>FAQ</li>
+                </ul>
               </li>
             </ul> 
             <div className='btns'>
