@@ -1,5 +1,6 @@
 import React from 'react'
 import './Phonesection.css'
+import Phone from '../Phone/Phone'
 
 const Phonesection = () => {
   return (
@@ -19,8 +20,8 @@ const Phonesection = () => {
               and minimizing taxes.
               </p>
           </div>
-          <div className='col-6'>
-
+          <div className='col-6 phony'>
+            <Phone/>
           </div>
         </div>
       </div>  
