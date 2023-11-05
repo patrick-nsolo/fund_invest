@@ -1,4 +1,11 @@
 .phone-section{
-    padding:80px;
-    
+    padding:80px 0;
+
+}
+.phone-section-container{
+    color:black;
+}
+.row{
+   width:100%; 
+   display: flex;
 }
