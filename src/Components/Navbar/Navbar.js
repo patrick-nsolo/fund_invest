@@ -14,6 +14,10 @@ const Navbar = () => {
   const handleAutomatedInvestingClick = () => {
     toggleDropdown();
   };
+  // Add this function to the "Learn" element
+  const handleLearnClick = () => {
+    toggleDropdown();
+  };
   return (
     <nav className='navbar'>
         <div className='navbar_content'>
@@ -42,7 +46,15 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a href='/learn'>Learn</a>
+                <div className={`nav_link ${isDropdownOpen ? 'caret-rotate' : ''}`} onClick={handleLearnClick}>
+                    <span className={`selected ${isDropdownOpen ? 'caret-rotate' : ''}`}>Learn</span>
+                    <div className={`caret ${isDropdownOpen ? 'caret-rotate' : ''}`}></div>
+                  </div>
+                  <ul className={`dropdown ${isDropdownOpen ? 'dropdown-open' : ''}`}>
+                      <li>Social Responsibility (SRI)</li>
+                      <li>Retirement (IRAs)</li>
+                      <li>Explore all Investments</li>
+                  </ul>
               </li>
             </ul> 
             <div className='btns'>
