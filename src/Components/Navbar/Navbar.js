@@ -30,6 +30,19 @@ const Navbar = () => {
       setAutomatedInvestingOpen(false);
     }
   };
+
+  const handleAutomatedInvestingOptionClick = () => {
+    // Toggle the dropdown and refresh the page
+    toggleAutomatedInvesting();
+    window.location.reload();
+  };
+
+  const handleLearnOptionClick = () => {
+    // Toggle the dropdown and refresh the page
+    toggleLearn();
+    window.location.reload();
+  };
+
   return (
     <nav className='navbar'>
         <div className='navbar_content'>
@@ -52,9 +65,9 @@ const Navbar = () => {
                   <div className={`caret ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
                 <ul className={`dropdown ${isAutomatedInvestingOpen ? 'dropdown-open' : ''}`}>
-                  <li>Social Responsibility (SRI)</li>
-                  <li>Retirement (IRAs)</li>
-                  <li>Explore all Investments</li>
+                  <li onClick={handleAutomatedInvestingOptionClick}>Social Responsibility (SRI)</li>
+                  <li onClick={handleAutomatedInvestingOptionClick}>Retirement (IRAs)</li>
+                  <li onClick={handleAutomatedInvestingOptionClick}>Explore all Investments</li>
                 </ul>
               </li>
               <li>
@@ -63,9 +76,9 @@ const Navbar = () => {
                   <div className={`caret ${isLearnOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
                 <ul className={`dropdown ${isLearnOpen ? 'dropdown-open' : ''}`}>
-                  <li>Education</li>
-                  <li>Guides</li>
-                  <li>FAQ</li>
+                  <li onClick={handleLearnOptionClick}>Education</li>
+                  <li onClick={handleLearnOptionClick}>Guides</li>
+                  <li onClick={handleLearnOptionClick}>FAQ</li>
                 </ul>
               </li>
             </ul> 
