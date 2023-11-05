@@ -3,20 +3,32 @@ import './Navbar.css'
 
 
 const Navbar = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-  // Function to toggle the dropdown
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
+  const [isAutomatedInvestingOpen, setAutomatedInvestingOpen] = useState(false);
+  const [isLearnOpen, setLearnOpen] = useState(false);
+  // Function to toggle the AutomatedInvesting dropdown
+  const toggleAutomatedInvesting = () => {
+    setAutomatedInvestingOpen(!isAutomatedInvestingOpen);
   };
 
-  // Add this function to the "Automated Investing" element
+  // Add this function to the learn dropdown
+  const toggleLearn = () => {
+    setLearnOpen(!isLearnOpen);
+  };
+  
   const handleAutomatedInvestingClick = () => {
-    toggleDropdown();
+    toggleAutomatedInvesting();
+    // Close the Learn dropdown if it's open
+    if (isLearnOpen) {
+      setLearnOpen(false);
+    }
   };
-  // Add this function to the "Learn" element
+
   const handleLearnClick = () => {
-    toggleDropdown();
+    toggleLearn();
+    // Close the Automated Investing dropdown if it's open
+    if (isAutomatedInvestingOpen) {
+      setAutomatedInvestingOpen(false);
+    }
   };
   return (
     <nav className='navbar'>
@@ -35,14 +47,14 @@ const Navbar = () => {
                 <a href='/'>Stocks</a>
               </li>
               <li>
-                <div className={`nav_link ${isDropdownOpen ? 'caret-rotate' : ''}`} onClick={handleAutomatedInvestingClick}>
-                  <span className={`selected ${isDropdownOpen ? 'caret-rotate' : ''}`}>Automated Investing</span>
-                  <div className={`caret ${isDropdownOpen ? 'caret-rotate' : ''}`}></div>
+                <div className={`nav_link ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`} onClick={handleAutomatedInvestingClick}>
+                  <span className={`selected ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}>Automated Investing</span>
+                  <div className={`caret ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
-                <ul className={`dropdown ${isDropdownOpen ? 'dropdown-open' : ''}`}>
-                    <li>Social Responsibility (SRI)</li>
-                    <li>Retirement (IRAs)</li>
-                    <li>Explore all Investments</li>
+                <ul className={`dropdown ${isAutomatedInvestingOpen ? 'dropdown-open' : ''}`}>
+                  <li>Social Responsibility (SRI)</li>
+                  <li>Retirement (IRAs)</li>
+                  <li>Explore all Investments</li>
                 </ul>
               </li>
               <li>
