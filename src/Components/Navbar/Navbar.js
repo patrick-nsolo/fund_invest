@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 
 
 const Navbar = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  // Function to toggle the dropdown
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
+  // Add this function to the "Automated Investing" element
+  const handleAutomatedInvestingClick = () => {
+    toggleDropdown();
+  };
   return (
     <nav className='navbar'>
         <div className='navbar_content'>
@@ -20,7 +31,15 @@ const Navbar = () => {
                 <a href='/'>Stocks</a>
               </li>
               <li>
-                <a href='/automated-investing'>Automated Investing </a>
+                <div className={`nav_link ${isDropdownOpen ? 'caret-rotate' : ''}`} onClick={handleAutomatedInvestingClick}>
+                  <span className={`selected ${isDropdownOpen ? 'caret-rotate' : ''}`}>Automated Investing</span>
+                  <div className={`caret ${isDropdownOpen ? 'caret-rotate' : ''}`}></div>
+                </div>
+                <ul className={`dropdown ${isDropdownOpen ? 'dropdown-open' : ''}`}>
+                    <li>Social Responsibility (SRI)</li>
+                    <li>Retirement (IRAs)</li>
+                    <li>Explore all Investments</li>
+                </ul>
               </li>
               <li>
                 <a href='/learn'>Learn</a>
