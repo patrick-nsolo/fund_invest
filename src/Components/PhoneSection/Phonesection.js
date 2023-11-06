@@ -1,6 +1,6 @@
 import React from 'react'
 import './Phonesection.css'
-import Phone from '../Phone/Phone'
+
 
 const Phonesection = () => {
   return (
@@ -21,6 +21,7 @@ const Phonesection = () => {
               </p>
           </div>
           <div className='col-6 phony'>
+            <h3>Hello World</h3>
             
           </div>
         </div>
