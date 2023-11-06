@@ -18,6 +18,31 @@
 .exchange-rates-text h3{
     font-size: 2rem;
     font-weight: 600;
+    margin-top: 20px;
+}
+.rates{
+    margin-top: 20px;
+}
+.rates ul{
+    display:flex;
+    justify-content: flex-start;
+    gap:100px;
+}
+.rates ul li{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.rates li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+.currency{
+    font-size: 0.8rem;
+}
+.yen{
+    margin-left: 25px;
 }
 .currency-converter{
     background: #008000;

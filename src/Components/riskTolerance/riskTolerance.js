@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Risktolerance.css'
 
-const riskTolerance = () => {
+const Risktolerance = () => {
+    const [selectedCurrency, setSelectedCurrency] = useState('dollars');
+    const [amount, setAmount] = useState('');
+
+    const handleCurrencyChange = (event) => {
+        setSelectedCurrency(event.target.value);
+    };
+
+    const handleAmountChange = (event) => {
+        setAmount(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    }
   return (
     <div className='rt'>
         <div className='exchange-rates'>
@@ -12,15 +26,24 @@ const riskTolerance = () => {
             <hr/>
             <div className='rates'>
                 <ul>
-                    <li><span>USD</span> 783.174</li>
-                    <li><span>GBP</span> 965.8102</li>
-                    <li><span>EUR</span> 838.3221</li>
+                    <li>
+                        <span className='currency'>USD</span> 
+                        <span>783.174</span>
+                    </li>
+                    <li>
+                        <span className='currency'>GBP</span> 
+                        <span>965.8102</span>
+                    </li>
+                    <li>
+                        <span className='currency'>EUR</span> 
+                        <span>838.3221</span>
+                    </li>
                 </ul>
             </div>
             <div className='rates'>
                 <ul>
-                    <li><span>CHF</span> 870</li>
-                    <li><span>YEN</span> 5.2351</li>
+                    <li><span className='currency'>CHF</span> 870</li>
+                    <li className='yen'><span className='currency'>YEN</span> 5.2351</li>
                 </ul>
             </div>
         </div>
@@ -28,18 +51,18 @@ const riskTolerance = () => {
             <h2>Convert currency</h2>
             <h3>Quickly convert any major currency to NGN</h3>
             <div>
-                <form >
+                <form onSubmit={handleSubmit}>
                 <div>
                 <label>Currency:</label>
-                <select >
-                    <option value="dollars">Dollars</option>
-                    <option value="pounds">Pounds</option>
-                    <option value="yen">Yen</option>
+                <select value={selectedCurrency} onChange={handleCurrencyChange}>
+                    <option value="USD">Dollars</option>
+                    <option value="GBP">Pounds</option>
+                    <option value="YEN">Yen</option>
                 </select>
                 <input
                     type="number"
-                    //value={amount}
-                    //onChange={handleAmountChange}
+                    value={amount}
+                    onChange={handleAmountChange}
                     placeholder="Enter amount"
                 />
                 </div>
@@ -51,4 +74,4 @@ const riskTolerance = () => {
   )
 }
 
-export default riskTolerance;
+export default Risktolerance;
