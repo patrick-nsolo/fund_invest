@@ -21,8 +21,8 @@ const Phonesection = () => {
               </p>
           </div>
           <div className='col-6 phony'>
-            <h3>Hello World</h3>
-            
+            <div className='phone-black-outline'></div>
+            <div className='phone-white-outline'></div>
           </div>
         </div>
       </div>  
