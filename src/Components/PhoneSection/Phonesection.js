@@ -25,10 +25,11 @@ const Phonesection = () => {
       };
       requestAnimationFrame(update);
     };
+    // This is to set the target balance and animation duration 
     const targetBalance = 67593.0;
     const animationDuration = 2000;
-    
-    // Call the updateBalance function with the target balance and duration
+
+    // this is to call the updateBalance function with the target balance and duration
     updateBalance(targetBalance, animationDuration);
   }, []);
   return (
