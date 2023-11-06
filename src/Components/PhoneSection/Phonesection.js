@@ -7,9 +7,10 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 const Phonesection = () => {
   const [balance, setBalance] = useState(0);
   useEffect(() => {
+    // This is the function to update the balance to the target value over time
     const updateBalance = (targetValue, duration) => {
       const startTime = Date.now();
-      const animationDuration = duration;
+      const animationDuration = duration; // in milliseconds
 
       const update = () => {
         const currentTime = Date.now();
