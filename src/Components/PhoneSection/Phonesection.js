@@ -32,7 +32,7 @@ const Phonesection = () => {
             </div>
             <div className='profile-pic'>
               <img src='../images/profile-pic.webp' alt=''/>
-              <h3 className='balance'>$60,000.00</h3>
+              <h3 className='balance'>$67,953.00</h3>
               <div className='indicators'>
                 <li><span className='caret'></span>1.7% today</li>
                 <li><span className='caret'></span>35.4% all time</li>

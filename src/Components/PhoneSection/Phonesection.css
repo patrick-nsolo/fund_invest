@@ -64,7 +64,7 @@
 }
 .indicators{
     position: absolute;
-    right:28.5%;
+    right:29%;
     bottom:-47%;
     z-index: 3;
     font-size: 0.6rem;
@@ -79,4 +79,5 @@
 }
 .indicators li .caret{
     color:#232323;
+    rotate: 180deg;
 }
