@@ -50,6 +50,9 @@ const Phonesection = () => {
               building long-term wealth by managing your risk, maximizing returns, 
               and minimizing taxes.
             </p>
+            <div className='banner_btn'>
+              <a href='/' className='smart-btn'>Get Started</a>
+            </div>
           </div>
           <div className='col-6 phony'>
             <div className='phone-black-outline'></div>
@@ -57,7 +60,7 @@ const Phonesection = () => {
             <div className='top-nav'>
               <FontAwesomeIcon icon={faArrowLeft} />
               <p>Classic Portfolio</p>
-              <p>Manage</p>
+              <p className='manage'>Manage</p>
             </div>
             <div className='profile-pic'>
               <img src='../images/profile-pic.webp' alt=''/>
@@ -73,8 +76,7 @@ const Phonesection = () => {
         <div className='line-chart'>
           <img src='../images/linechart.gif' alt=''/>
           <div className='transfer-money'>Transfer Money</div>
-        </div>
-        
+        </div>  
       </div>  
     </div>
   )
