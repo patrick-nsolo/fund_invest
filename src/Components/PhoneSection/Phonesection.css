@@ -24,7 +24,7 @@
 .phone-white-outline{
     height: 600px;
     width:387px;
-    background: red;
+    background: #d2d2d2;
     border-radius: 20px;
     position: relative;
     z-index: 2;
@@ -42,4 +42,19 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.profile-pic img{
+    width:60px;
+    height: 60px;
+    position: absolute;
+    right:34%;
+    bottom:-32%;
+    z-index: 3;
+    border-radius: 30px;
+}
+.balance{
+    position: absolute;
+    right:34%;
+    bottom:-37%;
+    z-index: 3;
 }
