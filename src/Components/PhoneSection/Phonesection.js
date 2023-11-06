@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import './Phonesection.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import React, { useState, useEffect } from 'react';
+import './Phonesection.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Phonesection = () => {
@@ -82,4 +83,4 @@ const Phonesection = () => {
   )
 }
 
-export default Phonesection
+export default Phonesection;
