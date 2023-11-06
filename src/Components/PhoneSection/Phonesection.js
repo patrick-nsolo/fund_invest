@@ -24,6 +24,13 @@ const Phonesection = () => {
             <div className='phone-black-outline'></div>
             <div className='phone-white-outline'></div>
           </div>
+          <div className='phone-interface'>
+            <div className='top-nav'>
+              <></>
+
+            </div>
+
+          </div>
         </div>
       </div>  
     </div>
