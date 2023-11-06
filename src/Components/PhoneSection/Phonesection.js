@@ -13,8 +13,8 @@ const Phonesection = () => {
             <h3>About Us</h3>
             <h1>WELCOME TO FUND INVEST</h1>
             <p>
-              There’s no secret to long-term wealth, but if there were it would be this:
-              <span>automated index investing.</span>
+              There’s no secret to long-term wealth, but if there were it would be 
+              <span> automated index investing.</span>
             </p>
             <p>
               Even with the inevitable ups and downs of the market, our expert-built, 
