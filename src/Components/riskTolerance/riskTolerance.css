@@ -1,9 +1,18 @@
 .rt{
-    background-color: #008000;
+    background-color: #aaabaa;
     height:500px;
     width:100%;
-    padding: 80px 100px; 
+    padding: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.rt img{
-    height:500px;
+.exchange-rates{
+    padding:100px;
+    width:500px;
+}
+.currency-converter{
+    background: #008000;
+    padding:190px;
+    width:50%;
 }
