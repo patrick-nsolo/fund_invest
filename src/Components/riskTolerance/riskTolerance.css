@@ -9,10 +9,18 @@
 }
 .exchange-rates{
     padding:100px;
-    width:500px;
+    width:100%;
+}
+.exchange-rates-text h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.exchange-rates-text h3{
+    font-size: 2rem;
+    font-weight: 600;
 }
 .currency-converter{
     background: #008000;
     padding:190px;
-    width:50%;
+    width:95%;
 }

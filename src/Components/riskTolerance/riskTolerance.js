@@ -17,7 +17,7 @@ const riskTolerance = () => {
                     <li><span>EUR</span> 838.3221</li>
                 </ul>
             </div>
-            <div>
+            <div className='rates'>
                 <ul>
                     <li><span>CHF</span> 870</li>
                     <li><span>YEN</span> 5.2351</li>
