@@ -1,10 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Phonesection.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 
 const Phonesection = () => {
+  const [balance, setBalance] = useState(0);
+  useEffect(() => {
+    const updateBalance = (targetValue, duration) => {
+      const startTime = Date.now();
+      const animationDuration = duration;
+
+      const update = () => {
+        const currentTime = Date.now();
+        const elapsedTime = currentTime - startTime;
+
+        if (elapsedTime < animationDuration) {
+          const newValue = (targetValue * (elapsedTime / animationDuration));
+          setBalance(newValue);
+          requestAnimationFrame(update);
+        } else {
+          setBalance(targetValue);
+        }
+      };
+      requestAnimationFrame(update);
+    };
+    const targetBalance = 67593.0;
+    const animationDuration = 2000;
+    
+    // Call the updateBalance function with the target balance and duration
+    updateBalance(targetBalance, animationDuration);
+  }, []);
   return (
     <div className='phone-section'>
       <div className='phone-section-container'>
@@ -33,7 +59,7 @@ const Phonesection = () => {
             </div>
             <div className='profile-pic'>
               <img src='../images/profile-pic.webp' alt=''/>
-              <h3 className='balance'>$67,953.00</h3>
+              <h3 className='balance'>${balance.toFixed(2)}</h3>
               <div className='indicators'>
                 <li><span className='caret'></span>1.7% today</li>
                 <li><span className='caret'></span>35.4% all time</li>
