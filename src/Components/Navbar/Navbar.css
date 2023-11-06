@@ -68,6 +68,10 @@
     align-items: center;
     gap: 10px;
   }
+  .hamburger{
+    cursor: pointer;
+    display: none;
+  }
   .bar{
     display:block;
     width: 25px;
@@ -112,5 +116,6 @@
     display: block;
     opacity: 1;
   }
+  
   
   

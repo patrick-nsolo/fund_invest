@@ -50,13 +50,13 @@ const Navbar = () => {
                 <img src='/Images/fund-invest.png' alt='logo'/>
             </div>  
             <ul className='navbar_ul'>
-              <li>
+              <li className='nav_link'>
                 <a href='/'>Cash</a>
               </li>
-              <li>
+              <li className='nav_link'>
                 <a href='/'>Bonds</a>
               </li>
-              <li>
+              <li className='nav_link'>
                 <a href='/'>Stocks</a>
               </li>
               <li>
@@ -83,13 +83,8 @@ const Navbar = () => {
               </li>
             </ul> 
             <div className='btns'>
-                <button className='login'>Login</button>
-                <button className='get_started'>Get Started</button>
-            </div>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+              <button className='login bttn'>Login</button>
+              <button className='get_started bttn'>Get Started</button>
             </div>    
         </div>    
     </nav>  
