@@ -1,16 +1,13 @@
 import React from 'react';
-import './Risktolerance';
+import './Risktolerance.css'
 
-const Risktolerance = () => {
+const riskTolerance = () => {
   return (
-    <div>
-      <h2>Select your Risk Tolerance</h2>
-      <button>Low</button>
-      <button>Medium</button>
-      <button>High</button>  
+    <div className='rt'>
+        
+      
     </div>
   )
 }
 
-export default Risktolerance;
-
+export default riskTolerance;
