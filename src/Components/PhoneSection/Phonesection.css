@@ -13,6 +13,10 @@
 .col-6{
     width: 50%;
 }
+.about h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
 .phone-black-outline{
     height: 600px;
     width:300px;
@@ -85,6 +89,18 @@
     width:250px;
     z-index: 4;
     position: absolute;
-    left:61.7%;
-    top:;
+    left:61.6%;
+    bottom:-75%;
+}
+.transfer-money{
+    background: #1b3b1b;
+    width:250px;
+    height: 50px;
+    padding: 15px;
+    z-index: 4;
+    position: absolute;
+    left:61.6%;
+    bottom:-85%;
+    color: #ffffff;
+    
 }

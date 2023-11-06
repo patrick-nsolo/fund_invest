@@ -9,18 +9,19 @@ const Phonesection = () => {
     <div className='phone-section'>
       <div className='phone-section-container'>
         <div className='row'>
-          <div className='col-6'>
+          <div className='col-6 about'>
             <h3>About Us</h3>
-              <h1>WELCOME TO FUND INVEST</h1>
-              <p>There’s no secret to long-term wealth, but if there were it would be this:
+            <h1>WELCOME TO FUND INVEST</h1>
+            <p>
+              There’s no secret to long-term wealth, but if there were it would be this:
               <span>automated index investing.</span>
-              </p>
-              <p>
+            </p>
+            <p>
               Even with the inevitable ups and downs of the market, our expert-built, 
               globally-diversified Automated Investing Account makes it easy to start 
               building long-term wealth by managing your risk, maximizing returns, 
               and minimizing taxes.
-              </p>
+            </p>
           </div>
           <div className='col-6 phony'>
             <div className='phone-black-outline'></div>
@@ -43,7 +44,9 @@ const Phonesection = () => {
         </div>
         <div className='line-chart'>
           <img src='../images/linechart.gif' alt=''/>
+          <div className='transfer-money'>Transfer Money</div>
         </div>
+        
       </div>  
     </div>
   )
