@@ -33,3 +33,13 @@
     margin-left: 161px;
     margin-top: 10px;
 }
+.top-nav{
+    position: absolute;
+    right:22%;
+    bottom:-20%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

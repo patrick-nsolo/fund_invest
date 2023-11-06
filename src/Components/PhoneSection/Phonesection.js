@@ -1,5 +1,7 @@
 import React from 'react'
 import './Phonesection.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const Phonesection = () => {
@@ -23,14 +25,17 @@ const Phonesection = () => {
           <div className='col-6 phony'>
             <div className='phone-black-outline'></div>
             <div className='phone-white-outline'></div>
-          </div>
-          <div className='phone-interface'>
             <div className='top-nav'>
-              <></>
-
+              <FontAwesomeIcon icon={faArrowLeft} />
+              <p>Classic Portfolio</p>
+              <p>Manage</p>
             </div>
-
+            <div>
+              
+            </div>
+            
           </div>
+
         </div>
       </div>  
     </div>
