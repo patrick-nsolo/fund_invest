@@ -81,3 +81,10 @@
     color:#232323;
     rotate: 180deg;
 }
+.line-chart img{
+    width:250px;
+    z-index: 4;
+    position: absolute;
+    left:61.7%;
+    top:;
+}

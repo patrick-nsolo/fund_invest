@@ -1,12 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Phonesection.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import Chart from 'chart.js'
 
 
 const Phonesection = () => {
-  const [chartData, setChartData] = useState
   return (
     <div className='phone-section'>
       <div className='phone-section-container'>
@@ -41,9 +39,10 @@ const Phonesection = () => {
                 <li>$579 estimated taxes saved</li>
               </div>
             </div>
-            
           </div>
-
+        </div>
+        <div className='line-chart'>
+          <img src='../images/linechart.gif' alt=''/>
         </div>
       </div>  
     </div>
