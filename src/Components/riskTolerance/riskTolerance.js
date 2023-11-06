@@ -1,21 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Risktolerance.css'
 
 const Risktolerance = () => {
-    const [selectedCurrency, setSelectedCurrency] = useState('dollars');
-    const [amount, setAmount] = useState('');
-
-    const handleCurrencyChange = (event) => {
-        setSelectedCurrency(event.target.value);
-    };
-
-    const handleAmountChange = (event) => {
-        setAmount(event.target.value);
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-    }
+    
   return (
     <div className='rt'>
         <div className='exchange-rates'>
@@ -47,27 +34,13 @@ const Risktolerance = () => {
                 </ul>
             </div>
         </div>
-        <div className='currency-converter'>
-            <h2>Convert currency</h2>
-            <h3>Quickly convert any major currency to NGN</h3>
-            <div>
-                <form onSubmit={handleSubmit}>
-                <div>
-                <label>Currency:</label>
-                <select value={selectedCurrency} onChange={handleCurrencyChange}>
-                    <option value="USD">Dollars</option>
-                    <option value="GBP">Pounds</option>
-                    <option value="YEN">Yen</option>
-                </select>
-                <input
-                    type="number"
-                    value={amount}
-                    onChange={handleAmountChange}
-                    placeholder="Enter amount"
-                />
-                </div>
-                <button type="submit">Convert</button>
-                </form>
+        <div className='risk-tolerance'>
+            <h2>Risk Tolerance</h2>
+            <h3>Choose your risk tolerance level</h3>
+            <div className='risk-tolerance-btn'>
+                <button className='login'>Low</button>
+                <button className='login'>Medium</button>
+                <button className='login'>High</button>    
             </div>
         </div>
     </div>

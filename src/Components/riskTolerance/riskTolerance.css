@@ -20,6 +20,10 @@
     font-weight: 600;
     margin-top: 20px;
 }
+hr{
+    width:45%;
+    margin-top: 10px;
+}
 .rates{
     margin-top: 20px;
 }
@@ -44,8 +48,14 @@
 .yen{
     margin-left: 25px;
 }
-.currency-converter{
-    background: #008000;
-    padding:190px;
-    width:95%;
+.risk-tolerance{
+    width:100%;
+}
+.risk-tolerance h2{
+    font-size: 3rem;    
+}
+.risk-tolerance-btn{
+    display: flex;
+    gap:50px;
+    margin-top: 20px;
 }
