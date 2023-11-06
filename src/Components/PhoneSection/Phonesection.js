@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './Phonesection.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import Chart from 'chart.js'
 
 
 const Phonesection = () => {
+  const [chartData, setChartData] = useState
   return (
     <div className='phone-section'>
       <div className='phone-section-container'>
