@@ -34,6 +34,7 @@ const Navbar = () => {
   const handleDropdownOptionClick = () => {
     setAutomatedInvestingOpen(false);
     setLearnOpen(false);
+    closeMobileMenu();
   };
 
   const handleAutomatedInvestingClick = () => {
@@ -49,6 +50,15 @@ const Navbar = () => {
       closeMobileMenu();
     };
   };
+  const dropdownLinks = document.querySelectorAll('.nav_link');
+
+  dropdownLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (window.innerWidth <= 900){
+        event.preventDefault();//prevent navigation clicks in mobile mode?
+      }
+    })
+  })
 
   return (
     <nav className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
