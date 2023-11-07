@@ -53,7 +53,8 @@ hr{
     margin-left: 280px;
 }
 .risk-tolerance h2{
-    font-size: 3rem;    
+    font-size: 3rem;  
+    font-weight: 900;    
 }
 .risk-tolerance-btn{
     display: flex;
@@ -65,9 +66,44 @@ hr{
     .rt{
         display: flex;
         flex-direction: column;
-        height:800px;
+        height:600px;
+        margin-top: 100px;
     }
     .exchange-rates{
         padding:45px;
     }
+    .risk-tolerance{
+        padding: 45px;
+        margin-left:0;
+    }
+    .exchange-rates-text h2{
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+    .exchange-rates-text h3{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    hr{
+        width:100%;
+    }
+    .rates ul{
+        gap:50px;
+    }
+    .currency{
+        font-size: 0.7rem;
+    }
+    .risk-tolerance{
+        width:100%;
+        margin-left: 0;
+    }
+    .risk-tolerance h2{
+        font-size: 2.2rem;      
+    }
+    .risk-tolerance-btn{
+        display: flex;
+        gap:50px;
+        margin-top: 20px;
+    }
+    
 }

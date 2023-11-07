@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
 }
 .banner_content{
   display:flex;
@@ -48,24 +49,28 @@
 
 @media (max-width:900px){
   .banner{
-    align-items: center;
+    width:100%;
+  }
+  .container{
+    padding: 0;
+    margin: 0;
+  }
+  .banner_content{
+    padding:0;
   }
   .banner_text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    padding:40px;
   }
   .banner_text h3{
     font-size: 1.2rem;
   }
   .banner_text h1{
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   .banner_text p{
-    font-size: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
   }
 }
 @media (max-width:1900px){

@@ -122,40 +122,43 @@
         display: flex;
         flex-direction: column;
     }
+    .phone-section{
+        padding: 0;
+    }
     .about{
-        text-align: center;
+        
         padding: 0;
     }
     .phone-black-outline{
-        left:20%;
-        top:199%;
+        left:10%;
+        top:179%;
     }
     .phone-white-outline{
-        margin-left: 5px;
-        margin-top:65px;
+        margin-left: 46px;
+        margin-top:107px;
     }
     .top-nav{
-        right:26%;
-        bottom:-110%;
+        right:20%;
+        bottom:-90%;
     }
     .profile-pic img{
-        right:62%;
-        bottom:-122%;
+        right:67%;
+        bottom:-104%;
     }
     .balance{
         right:48%;
-        bottom:-129%;
+        bottom:-112%;
     }
     .indicators{
         right:46%;
-        bottom:-137%;
+        bottom:-119%;
     }
     .line-chart img{
-        left:25%;
-        bottom:-166%;
+        left:16.5%;
+        bottom:-150%;
     }
     .transfer-money{
-        left:25%;
-        bottom:-176%;   
+        left:16.5%;
+        bottom:-158%;   
     }
 }
