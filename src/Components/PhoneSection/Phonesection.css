@@ -134,35 +134,35 @@
         text-align: center;
     }
     .phone-black-outline{
-        left:20%;
-        top:179%;
+        left:12%;
+        top:200%;
     }
     .phone-white-outline{
-        margin-left: 105px;
-        margin-top:67px;
+        margin-left: 54px;
+        margin-top:78px;
     }
     .top-nav{
-        right:25%;
-        bottom:-90%;
+        right:17%;
+        bottom:-110%;
     }
     .profile-pic img{
-        right:62%;
-        bottom:-104%;
+        right:65%;
+        bottom:-125%;
     }
     .balance{
-        right:48%;
-        bottom:-112%;
+        right:46%;
+        bottom:-130%;
     }
     .indicators{
-        right:46%;
-        bottom:-119%;
+        right:44%;
+        bottom:-137%;
     }
     .line-chart img{
-        left:25%;
-        bottom:-147%;
+        left:19%;
+        bottom:-166%;
     }
     .transfer-money{
-        left:25%;
-        bottom:-155%;   
+        left:19%;
+        bottom:-175%;   
     }
 }
