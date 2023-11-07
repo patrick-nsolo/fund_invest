@@ -23,14 +23,14 @@
   list-style: none;
   gap: 50px; 
 }
-.navbar_ul li a, .nav_link, .caret{
+.navbar_ul li a, .selected{
   text-decoration: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
 }
-.navbar_ul li a:hover, .nav_link:hover, .caret:hover{
+.navbar_ul li a:hover, .nav_link:hover, .selected:hover{
   cursor: pointer;
-  color: #008000;
+  color: #173417;
 }
 .btns{
   display: flex;
@@ -150,6 +150,12 @@
   }
   .navbar.mobile-menu-open .navbar_ul {
     left:0;
+  }
+  .dropdown{
+    align-items: center;
+  }
+  .learn{
+    margin-top: 100px;
   }
 }
 

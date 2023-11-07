@@ -41,6 +41,7 @@ const Navbar = () => {
     toggleAutomatedInvesting();
     if (isMobileMenuOpen){
       closeMobileMenu();
+      
     };
   }
 
@@ -50,15 +51,7 @@ const Navbar = () => {
       closeMobileMenu();
     };
   };
-  const dropdownLinks = document.querySelectorAll('.nav_link');
-
-  dropdownLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-      if (window.innerWidth <= 900){
-        event.preventDefault();//prevent navigation clicks in mobile mode?
-      }
-    })
-  })
+  
 
   return (
     <nav className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
@@ -81,8 +74,8 @@ const Navbar = () => {
               <li className='nav_link'>
                 <a href='/'>Stocks</a>
               </li>
-              <li>
-                <div className={`nav_link ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`} onClick={handleAutomatedInvestingClick}>
+              <li >
+                <div className={`nav_link drop_link ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`} onClick={handleAutomatedInvestingClick}>
                   <span className={`selected ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}>Automated Investing</span>
                   <div className={`caret ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
@@ -92,8 +85,8 @@ const Navbar = () => {
                   <li onClick={handleDropdownOptionClick}>Explore all Investments</li>
                 </ul>
               </li>
-              <li>
-                <div className={`nav_link ${isLearnOpen ? 'caret-rotate' : ''}`} onClick={handleLearnClick}>
+              <li >
+                <div className={`nav_link drop_link learn ${isLearnOpen ? 'caret-rotate' : ''}`} onClick={handleLearnClick}>
                   <span className={`selected ${isLearnOpen ? 'caret-rotate' : ''}`}>Learn</span>
                   <div className={`caret ${isLearnOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
