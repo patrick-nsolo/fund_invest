@@ -126,23 +126,27 @@
         padding: 0;
     }
     .about{
-        
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto 0;
+        padding: 40px;
+        text-align: center;
     }
     .phone-black-outline{
-        left:10%;
+        left:20%;
         top:179%;
     }
     .phone-white-outline{
-        margin-left: 46px;
-        margin-top:107px;
+        margin-left: 105px;
+        margin-top:67px;
     }
     .top-nav{
-        right:20%;
+        right:25%;
         bottom:-90%;
     }
     .profile-pic img{
-        right:67%;
+        right:62%;
         bottom:-104%;
     }
     .balance{
@@ -154,11 +158,11 @@
         bottom:-119%;
     }
     .line-chart img{
-        left:16.5%;
-        bottom:-150%;
+        left:25%;
+        bottom:-147%;
     }
     .transfer-money{
-        left:16.5%;
-        bottom:-158%;   
+        left:25%;
+        bottom:-155%;   
     }
 }

@@ -61,18 +61,19 @@
   .banner_text{
     display: flex;
     flex-direction: column;
+    width:450px;
+    text-align: center;
   }
   .banner_text h3{
     font-size: 1.2rem;
   }
   .banner_text h1{
     font-size: 2rem;
+    margin-top: 0;
   }
   .banner_text p{
-    font-size: 0.7rem;
-    text-align: center;
-  }
-}
-@media (max-width:1900px){
+    font-size: 0.8rem;
+    margin-top: 0;
 
+  }
 }
