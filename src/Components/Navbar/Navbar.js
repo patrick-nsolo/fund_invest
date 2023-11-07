@@ -57,12 +57,17 @@ const Navbar = () => {
 
 
   return (
-    <nav className='navbar'>
+    <nav className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <div className='navbar_content'>
             <div className='logo'>
                 <img src='/Images/fund-invest.png' alt='logo'/>
-            </div>  
-            <ul className='navbar_ul'>
+            </div> 
+            <div className='mobile-menu-icon' onClick={toggleMobileMenu}>
+              <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
+              <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
+              <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
+            </div> 
+            <ul className={`navbar_ul ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
               <li className='nav_link'>
                 <a href='/'>Cash</a>
               </li>
