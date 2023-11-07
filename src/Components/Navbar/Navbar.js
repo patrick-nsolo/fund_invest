@@ -10,15 +10,17 @@ const Navbar = () => {
   // Function to toggle the AutomatedInvesting dropdown
   const toggleAutomatedInvesting = () => {
     setAutomatedInvestingOpen(!isAutomatedInvestingOpen);
-    handleDropdownOptionClick();
-    closeMobileMenu();
+    if(isMobileMenuOpen){
+      closeMobileMenu();
+    };
   };
 
   // Add this function to the learn dropdown
   const toggleLearn = () => {
     setLearnOpen(!isLearnOpen);
-    handleDropdownOptionClick();
-    closeMobileMenu();
+    if(isMobileMenuOpen){
+      closeMobileMenu();
+    };
   };
 
   const toggleMobileMenu = () => {
@@ -32,8 +34,6 @@ const Navbar = () => {
   const handleDropdownOptionClick = () => {
     setAutomatedInvestingOpen(false);
     setLearnOpen(false);
-    closeMobileMenu();
-    
   };
 
   const handleAutomatedInvestingClick = () => {
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <a href='/'>Stocks</a>
               </li>
               <li>
-                <div className={`nav_link ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`} onClick={toggleAutomatedInvesting}>
+                <div className={`nav_link ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`} onClick={handleAutomatedInvestingClick}>
                   <span className={`selected ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}>Automated Investing</span>
                   <div className={`caret ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <div className={`nav_link ${isLearnOpen ? 'caret-rotate' : ''}`} onClick={toggleLearn}>
+                <div className={`nav_link ${isLearnOpen ? 'caret-rotate' : ''}`} onClick={handleLearnClick}>
                   <span className={`selected ${isLearnOpen ? 'caret-rotate' : ''}`}>Learn</span>
                   <div className={`caret ${isLearnOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
