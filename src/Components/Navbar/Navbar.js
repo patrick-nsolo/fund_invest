@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className='logo'>
                 <img src='/Images/fund-invest.png' alt='logo'/>
             </div> 
-            <div className='mobile-menu-icon' onClick={toggleMobileMenu}>
+            <div className='mobile-menu-icon hamburger' onClick={toggleMobileMenu}>
               <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
               <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
               <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
