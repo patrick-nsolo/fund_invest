@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import './Navbar.css'
+import React, { useState } from 'react';
+import './Navbar.css';
 
 
 const Navbar = () => {
@@ -16,45 +16,15 @@ const Navbar = () => {
   const toggleLearn = () => {
     setLearnOpen(!isLearnOpen);
   };
-  
-  const handleAutomatedInvestingClick = () => {
-    toggleAutomatedInvesting();
-    // Close the Learn dropdown if it's open
-    if (isLearnOpen) {
-      setLearnOpen(false);
-    }
-  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const closeMenus = () => {
-    setAutomatedInvestigation(false);
+    setAutomatedInvestingOpen(false);
     setLearnOpen(false);
-  }
-
-  const handleLearnClick = () => {
-    toggleLearn();
-    // Close the Automated Investing dropdown if it's open
-    if (isAutomatedInvestingOpen) {
-      setAutomatedInvestingOpen(false);
-    }
   };
-
-  const handleAutomatedInvestingOptionClick = () => {
-    // Toggle the dropdown and refresh the page
-    toggleAutomatedInvesting();
-    window.location.reload();
-  };
-
-  const handleLearnOptionClick = () => {
-    // Toggle the dropdown and refresh the page
-    toggleLearn();
-    window.location.reload();
-  };
-
-
 
   return (
     <nav className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
@@ -78,25 +48,25 @@ const Navbar = () => {
                 <a href='/'>Stocks</a>
               </li>
               <li>
-                <div className={`nav_link ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`} onClick={handleAutomatedInvestingClick}>
+                <div className={`nav_link ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`} onClick={toggleAutomatedInvesting}>
                   <span className={`selected ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}>Automated Investing</span>
                   <div className={`caret ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
                 <ul className={`dropdown ${isAutomatedInvestingOpen ? 'dropdown-open' : ''}`}>
-                  <li onClick={handleAutomatedInvestingOptionClick}>Social Responsibility (SRI)</li>
-                  <li onClick={handleAutomatedInvestingOptionClick}>Retirement (IRAs)</li>
-                  <li onClick={handleAutomatedInvestingOptionClick}>Explore all Investments</li>
+                  <li onClick={closeMenus}>Social Responsibility (SRI)</li>
+                  <li onClick={closeMenus}>Retirement (IRAs)</li>
+                  <li onClick={closeMenus}>Explore all Investments</li>
                 </ul>
               </li>
               <li>
-                <div className={`nav_link ${isLearnOpen ? 'caret-rotate' : ''}`} onClick={handleLearnClick}>
+                <div className={`nav_link ${isLearnOpen ? 'caret-rotate' : ''}`} onClick={toggleLearn}>
                   <span className={`selected ${isLearnOpen ? 'caret-rotate' : ''}`}>Learn</span>
                   <div className={`caret ${isLearnOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
                 <ul className={`dropdown ${isLearnOpen ? 'dropdown-open' : ''}`}>
-                  <li onClick={handleLearnOptionClick}>Education</li>
-                  <li onClick={handleLearnOptionClick}>Guides</li>
-                  <li onClick={handleLearnOptionClick}>FAQ</li>
+                  <li onClick={closeMenus}>Education</li>
+                  <li onClick={closeMenus}>Guides</li>
+                  <li onClick={closeMenus}>FAQ</li>
                 </ul>
               </li>
             </ul> 
