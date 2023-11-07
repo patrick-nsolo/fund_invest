@@ -60,3 +60,14 @@ hr{
     gap:50px;
     margin-top: 20px;
 }
+
+@media(max-width:900px){
+    .rt{
+        display: flex;
+        flex-direction: column;
+        height:800px;
+    }
+    .exchange-rates{
+        padding:45px;
+    }
+}

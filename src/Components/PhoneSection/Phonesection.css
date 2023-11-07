@@ -35,8 +35,6 @@
     left:60%;
 }
 .phone-white-outline{
-    height: 600px;
-    width:387px;
     background: #71c671;
     border-radius: 25px;
     position: relative;
@@ -133,15 +131,31 @@
         top:199%;
     }
     .phone-white-outline{
-        height: 600px;
-        width:387px;
-        background: #71c671;
-        border-radius: 25px;
-        position: relative;
-        z-index: 2;
-        height: 580px;
-        width:282px;
-        margin-left: 161px;
-        margin-top: 10px;
+        margin-left: 5px;
+        margin-top:65px;
+    }
+    .top-nav{
+        right:26%;
+        bottom:-110%;
+    }
+    .profile-pic img{
+        right:62%;
+        bottom:-122%;
+    }
+    .balance{
+        right:48%;
+        bottom:-129%;
+    }
+    .indicators{
+        right:46%;
+        bottom:-137%;
+    }
+    .line-chart img{
+        left:25%;
+        bottom:-166%;
+    }
+    .transfer-money{
+        left:25%;
+        bottom:-176%;   
     }
 }
