@@ -119,3 +119,29 @@
     bottom:-85%;
     color: #ffffff;   
 }
+@media (max-width:900px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        text-align: center;
+        padding: 0;
+    }
+    .phone-black-outline{
+        left:20%;
+        top:199%;
+    }
+    .phone-white-outline{
+        height: 600px;
+        width:387px;
+        background: #71c671;
+        border-radius: 25px;
+        position: relative;
+        z-index: 2;
+        height: 580px;
+        width:282px;
+        margin-left: 161px;
+        margin-top: 10px;
+    }
+}
