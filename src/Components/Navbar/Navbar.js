@@ -36,6 +36,20 @@ const Navbar = () => {
     
   };
 
+  const handleAutomatedInvestingClick = () => {
+    toggleAutomatedInvesting();
+    if (isMobileMenuOpen){
+      closeMobileMenu();
+    };
+  }
+
+  const handleLearnClick = () => {
+    toggleLearn();
+    if (isLearnOpen){
+      closeMobileMenu();
+    };
+  };
+
   return (
     <nav className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <div className='navbar_content'>
