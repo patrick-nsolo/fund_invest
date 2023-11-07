@@ -10,20 +10,30 @@ const Navbar = () => {
   // Function to toggle the AutomatedInvesting dropdown
   const toggleAutomatedInvesting = () => {
     setAutomatedInvestingOpen(!isAutomatedInvestingOpen);
+    handleDropdownOptionClick();
+    closeMobileMenu();
   };
 
   // Add this function to the learn dropdown
   const toggleLearn = () => {
     setLearnOpen(!isLearnOpen);
+    handleDropdownOptionClick();
+    closeMobileMenu();
   };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const closeMenus = () => {
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
+  const handleDropdownOptionClick = () => {
     setAutomatedInvestingOpen(false);
     setLearnOpen(false);
+    closeMobileMenu();
+    
   };
 
   return (
@@ -32,10 +42,10 @@ const Navbar = () => {
             <div className='logo'>
                 <img src='/Images/fund-invest.png' alt='logo'/>
             </div> 
-            <div className='mobile-menu-icon hamburger' onClick={toggleMobileMenu}>
-              <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
-              <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
-              <div className={`bar ${isMobileMenuOpen ? 'change' : ''}`}></div>
+            <div className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
+              <div className='bar'></div>
+              <div className='bar'></div>
+              <div className='bar'></div>
             </div> 
             <ul className={`navbar_ul ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
               <li className='nav_link'>
@@ -53,9 +63,9 @@ const Navbar = () => {
                   <div className={`caret ${isAutomatedInvestingOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
                 <ul className={`dropdown ${isAutomatedInvestingOpen ? 'dropdown-open' : ''}`}>
-                  <li onClick={closeMenus}>Social Responsibility (SRI)</li>
-                  <li onClick={closeMenus}>Retirement (IRAs)</li>
-                  <li onClick={closeMenus}>Explore all Investments</li>
+                  <li onClick={handleDropdownOptionClick}>Social Responsibility (SRI)</li>
+                  <li onClick={handleDropdownOptionClick}>Retirement (IRAs)</li>
+                  <li onClick={handleDropdownOptionClick}>Explore all Investments</li>
                 </ul>
               </li>
               <li>
@@ -64,9 +74,9 @@ const Navbar = () => {
                   <div className={`caret ${isLearnOpen ? 'caret-rotate' : ''}`}></div>
                 </div>
                 <ul className={`dropdown ${isLearnOpen ? 'dropdown-open' : ''}`}>
-                  <li onClick={closeMenus}>Education</li>
-                  <li onClick={closeMenus}>Guides</li>
-                  <li onClick={closeMenus}>FAQ</li>
+                  <li onClick={handleDropdownOptionClick}>Education</li>
+                  <li onClick={handleDropdownOptionClick}>Guides</li>
+                  <li onClick={handleDropdownOptionClick}>FAQ</li>
                 </ul>
               </li>
             </ul> 
@@ -80,3 +90,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
