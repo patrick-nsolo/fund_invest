@@ -5,6 +5,8 @@ import './Navbar.css'
 const Navbar = () => {
   const [isAutomatedInvestingOpen, setAutomatedInvestingOpen] = useState(false);
   const [isLearnOpen, setLearnOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   // Function to toggle the AutomatedInvesting dropdown
   const toggleAutomatedInvesting = () => {
     setAutomatedInvestingOpen(!isAutomatedInvestingOpen);
@@ -22,6 +24,15 @@ const Navbar = () => {
       setLearnOpen(false);
     }
   };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMenus = () => {
+    setAutomatedInvestigation(false);
+    setLearnOpen(false);
+  }
 
   const handleLearnClick = () => {
     toggleLearn();
@@ -42,6 +53,8 @@ const Navbar = () => {
     toggleLearn();
     window.location.reload();
   };
+
+
 
   return (
     <nav className='navbar'>
