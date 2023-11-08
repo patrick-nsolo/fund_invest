@@ -1,5 +1,6 @@
 import React from 'react';
 import './Risktolerance.css'
+import { Link } from 'react-router-dom';
 
 const Risktolerance = () => {
     
@@ -38,9 +39,9 @@ const Risktolerance = () => {
             <h2>Risk Tolerance</h2>
             <h3>Choose your risk tolerance level</h3>
             <div className='risk-tolerance-btn'>
-                <button className='login'>Low</button>
-                <button className='login'>Medium</button>
-                <button className='login'>High</button>    
+                <button className='login rt-btn low '>Low</button>
+                <button className='login rt-btn medium'>Medium</button>
+                <button className='login rt-btn high'>High</button>    
             </div>
         </div>
     </div>

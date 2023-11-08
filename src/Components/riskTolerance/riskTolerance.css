@@ -66,7 +66,7 @@ hr{
     .rt{
         display: flex;
         flex-direction: column;
-        height:600px;
+        height:700px;
         margin-top: 100px;
     }
     .exchange-rates{
@@ -100,10 +100,18 @@ hr{
     .risk-tolerance h2{
         font-size: 2.2rem;      
     }
+    
+    .rt-btn{
+        width:200px;
+    }
     .risk-tolerance-btn{
-        display: flex;
-        gap:50px;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .medium, .high{
         margin-top: 20px;
     }
+    
     
 }
