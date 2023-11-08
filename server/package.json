@@ -1,0 +1,26 @@
+{
+  "name": "fundinvest_server",
+  "version": "1.0.0",
+  "description": "The server for fundinvest react web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrick-nsolo/fund_invest.git"
+  },
+  "keywords": [
+    "roboadvisor",
+    "finance",
+    "automated",
+    "investing",
+    "backend"
+  ],
+  "author": "patrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrick-nsolo/fund_invest/issues"
+  },
+  "homepage": "https://github.com/patrick-nsolo/fund_invest#readme"
+}
