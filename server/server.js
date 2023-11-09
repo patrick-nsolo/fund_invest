@@ -56,7 +56,7 @@ app.post('/users', async (req,res) => {
     }
 });
 
-//define a route to retrieve all user data
+//definition of route to retrieve all user data
 app.get('/users', async (req, res) => {
     try{
         const users = await User.find();
