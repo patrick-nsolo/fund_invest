@@ -1,9 +1,8 @@
 import React from 'react'
-import './Low.css'
 
-const Low = () => {
+const Medium = () => {
   return (
-    <div className='low-container'>
+    <div>
         <div className='intro'>
             <h1>Hello User,</h1> 
             <h2>You have selected a low Risk tolerance level</h2>
@@ -20,9 +19,9 @@ const Low = () => {
             <div className='banner_btn'>
                 <a href='/' className='smart-btn'>Get Started</a>
             </div>
-        </div>   
+        </div>  
     </div>
   )
 }
 
-export default Low
+export default Medium

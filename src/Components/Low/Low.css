@@ -1,0 +1,11 @@
+.low-container{
+    width:100%;
+    height:50vh;
+    background-color: yellowgreen;
+    padding:100px 100px;
+}
+
+.low-portfolio img{
+    width:100px;
+    height:100px;
+}
