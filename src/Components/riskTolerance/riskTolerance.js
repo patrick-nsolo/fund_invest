@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Risktolerance = () => {
     const navigate = useNavigate();
 
-    const handleButtonClick = () =>{
+    const handleButtonClick = (path) =>{
         navigate(path);
     };
     
@@ -44,9 +44,9 @@ const Risktolerance = () => {
             <h2>Risk Tolerance</h2>
             <h3>Choose your risk tolerance level</h3>
             <div className='risk-tolerance-btn'>
-                <button className='login rt-btn low '>Low</button>
-                <button className='login rt-btn medium'>Medium</button>
-                <button className='login rt-btn high'>High</button>    
+                <button className='login rt-btn low' onClick={() => handleButtonClick('/low')}>Low</button>
+                <button className='login rt-btn medium' onClick={() => handleButtonClick('/medium')}>Medium</button>
+                <button className='login rt-btn high' onClick={() => handleButtonClick('/high')}>High</button>    
             </div>
         </div>
     </div>
