@@ -1,7 +1,13 @@
 import React from 'react';
-import './Risktolerance.css'
+import './Risktolerance.css';
+import { useNavigate } from 'react-router-dom';
 
 const Risktolerance = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () =>{
+        navigate(path);
+    };
     
   return (
     <div className='rt'>
