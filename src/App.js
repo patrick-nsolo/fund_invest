@@ -3,7 +3,7 @@ import './App.css';
 import Header from '../src/Components/Header/Header';
 import Phonesection from './Components/PhoneSection/Phonesection';
 import Risktolerance from './Components/Risktolerance/Risktolerance';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (

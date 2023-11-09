@@ -1,6 +1,5 @@
 import React from 'react';
 import './Risktolerance.css'
-import { Link } from 'react-router-dom';
 
 const Risktolerance = () => {
     
