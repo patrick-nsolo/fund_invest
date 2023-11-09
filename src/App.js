@@ -7,16 +7,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Low from './Components/Low/Low';
 
 function App() {
+  
   return (
     <Router>
       <div>
         <Header/>
         <Routes>
-          <Route path="/" exact component={Phonesection} />
-          <Route path="/Low" exact component={Low} />
+          <Route path="/" element={<Phonesection />} />
+          <Route path="/Low" element={<Low />} />
         </Routes>
-        <Risktolerance/>
       </div>
+      <Risktolerance/>
     </Router>
     
   );
