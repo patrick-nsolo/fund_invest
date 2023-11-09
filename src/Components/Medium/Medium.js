@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Medium.css';
 
 const Medium = () => {
   return (
-    <div>
+    <div className='medium-container'>
         <div className='intro'>
-            <h1>Hello User,</h1> 
-            <h2>You have selected a low Risk tolerance level</h2>
+            <h1>Hello Investor,</h1> 
+            <h2>You have selected a Medium Risk tolerance level</h2>
         </div>
-        <div className='low-portfolio'>
+        <div className='medium-portfolio'>
             <p>
                 Choose from hundreds of funds in categories like clean energy, 
                 tech, and crypto and we’ll handle the trades and rebalance your 
@@ -17,7 +18,7 @@ const Medium = () => {
                 line with your preferred risk level.
             </p>
             <div className='banner_btn'>
-                <a href='/' className='smart-btn'>Get Started</a>
+                <button className='medium-btn'>Get Started</button>
             </div>
         </div>  
     </div>

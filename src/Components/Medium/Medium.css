@@ -1,0 +1,28 @@
+.medium-container{
+    width:100%;
+    height:50vh;
+    background-color: #02c702;
+    padding:50px 100px;
+}
+.medium-portfolio p{
+    color:#fff;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.medium-btn{
+    width:150px;
+    background: #008000;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media (max-width:900px){
+    .medium-container{
+        height:500px;
+        margin-bottom: none;
+        padding: 20px;
+    }
+}

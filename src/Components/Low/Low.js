@@ -5,8 +5,8 @@ const Low = () => {
   return (
     <div className='low-container'>
         <div className='intro'>
-            <h1>Hello User,</h1> 
-            <h2>You have selected a low Risk tolerance level</h2>
+            <h1>Hello Investor,</h1> 
+            <h2>You have selected a Low Risk tolerance level</h2>
         </div>
         <div className='low-portfolio'>
             <p>
@@ -18,7 +18,7 @@ const Low = () => {
                 line with your preferred risk level.
             </p>
             <div className='banner_btn'>
-                <a href='/' className='smart-btn'>Get Started</a>
+                <button className='low-btn'>Get Started</button>
             </div>
         </div>   
     </div>
