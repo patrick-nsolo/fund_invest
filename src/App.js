@@ -20,8 +20,9 @@ function App() {
           <Route path="/Medium" element={<Medium />} />
           <Route path="/High" element={<High />} />
         </Routes>
+        <Risktolerance/>
       </div>
-      <Risktolerance/>
+      
     </Router>
     
   );
